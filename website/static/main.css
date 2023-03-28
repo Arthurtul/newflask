@@ -1,0 +1,124 @@
+/* New color scheme */
+:root {
+  --primary-color: #3d5a80;
+  --secondary-color: #98c1d9;
+  --accent-color: #e0fbfc;
+}
+
+
+body {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color);
+}
+
+p {
+  color: var(--primary-color);
+}
+
+/* Header styles */
+.site-header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+/* Content section styles */
+.content-section {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-title:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.article-content {
+  color: var(--primary-color);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.article-img {
+  height: 100px;
+  width: 100px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 3px solid var(--secondary-color);
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.article-metadata a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 200px;
+  width: 200px;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color);
+}
+
+.account-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Button styles */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}

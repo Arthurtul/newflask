@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %} {% endblock %}</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark initial scale">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" id="home" href="/">Home</a>
+                  <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+                  <a class="nav-item nav-link" id="login" href="/login">Login</a>
+                  <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
+                  <a class="nav-item nav-link" id="leaps" href="/leaps">Leaps years</a>
+                  <a class="nav-item nav-link" id="isleap" href="/isleap">Is leap?</a>
+                  <a class="nav-item nav-link" id="books" href="/books">Books</a>
+                  <a class="nav-item nav-link" id="posts" href="/posts">Posts</a>
+                  <a class="nav-item nav-link" id="add_post" href="/add_post">Add Post</a>
+                </div>
+            </div>
+        </nav>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        ></script>
+    </header>
+</body>
+{% block body %} {% endblock %}
+</html>

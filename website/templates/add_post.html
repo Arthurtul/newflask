@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+{% endblock %}
+{% block body %}
+
+{% block content %}
+
+  <form method="post" action="{{ url_for('views.add_post') }}">
+      {{ form.hidden_tag() }}
+      <div class="form-group">
+      {{ form.data.label(class="form-control-label") }}
+      {{ form.data(class="form-control") }}
+      </div>
+      <div class="form-group">
+      {{ form.autor.label(class="form-control-label") }}
+      {{ form.autor(class="form-control") }}
+      </div>
+      <div class="form-group">
+      {{ form.book_name.label(class="form-control-label") }}
+      {{ form.book_name(class="form-control", rows="5") }}
+      </div>
+       <div class="form-group">
+      {{ form.comment.label(class="form-control-label") }}
+      {{ form.comment(class="form-control", rows="5") }}
+      </div>
+      {{ form.submit }}
+  </form>
+
+{% endblock %}
+{% endblock %}

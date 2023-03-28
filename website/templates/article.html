@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+{% endblock %}
+{% block body %}
+
+{% block content %}
+<html>
+<head>
+	<title>{{ post.comment }}</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<style>
+		h2 {
+			font-size: 28px;
+			margin-bottom: 10px;
+		}
+		a {
+			color: #0066cc;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		p {
+			margin: 0 0 10px 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>{{ post.book_name }}</h1>
+	<p>Autorius: {{ post.autor }}</p>
+	<p>Data: {{ post.data }}</p>
+	<p>{{ post.comment }}</p>
+	<p><a href="{{ url_for('views.posts') }}">Atgal į pagrindinį puslapį</a></p>
+</body>
+</html>
+{% endblock %}
+{% endblock %}
